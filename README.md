@@ -1,8 +1,6 @@
 # getting-started-with-openai
 
-To give you an idea of how these parameters can be used in different scenarios, here’s a table with example values:
-
-
+To give you an idea of how `temperature` and `Top_p` parameters can be used in different scenarios, here’s a table with example values:
 | Use Case |	Temperature |	Top_p |	Description
 |---|--|--|--|
 | Code Generation |	0.2 |	0.1 |	Generates code that adheres to established patterns and conventions. Output is more deterministic and focused. Useful for generating syntactically correct code.|

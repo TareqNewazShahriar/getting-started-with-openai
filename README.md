@@ -9,3 +9,15 @@ To give you an idea of how `temperature` and `Top_p` parameters can be used in d
 |Code Comment Generation |	0.3 |	0.2 |	Generates code comments that are more likely to be concise and relevant. Output is more deterministic and adheres to conventions.|
 |Data Analysis Scripting |	0.2 |	0.1 |	Generates data analysis scripts that are more likely to be correct and efficient. Output is more deterministic and focused.|
 |Exploratory Code Writing |	0.6 |	0.7 |	Generates code that explores alternative solutions and creative approaches. Output is less constrained by established patterns.|
+
+
+### Knowing the Models
+* `davinci`: `davinci-...` models are very useful to use a chat agent. If you train the model using some seed data (some instructions in plain text), it plays the role as instructed.
+* 
+
+### Important Links
+* OpenAI API Parameters descriptions
+  https://platform.openai.com/docs/api-reference/chat/object#chat-create-seed
+
+
+

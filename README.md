@@ -1,6 +1,16 @@
 # getting-started-with-openai
 
-To give you an idea of how `temperature` and `Top_p` parameters can be used in different scenarios, here’s a table with example values:
+### Knowing the Models
+* `davinci`: `davinci-...` models are very useful to use a chat agent. If you train the model using some seed data (some instructions in plain text), it plays the role as instructed.
+
+### Important Links
+* Text generation Models Api documentation: https://platform.openai.com/docs/guides/text-generation
+* OpenAI API Parameters descriptions: https://platform.openai.com/docs/api-reference/chat/object#chat-create-seed
+* API Documentation link on Fine-tuning: https://platform.openai.com/docs/guides/fine-tuning
+
+
+### Notes
+* To give you an idea of how `temperature` and `Top_p` parameters can be used in different scenarios, here’s a table with example values:
 | Use Case |	Temperature |	Top_p |	Description
 |---|--|--|--|
 | Code Generation |	0.2 |	0.1 |	Generates code that adheres to established patterns and conventions. Output is more deterministic and focused. Useful for generating syntactically correct code.|
@@ -9,21 +19,3 @@ To give you an idea of how `temperature` and `Top_p` parameters can be used in d
 |Code Comment Generation |	0.3 |	0.2 |	Generates code comments that are more likely to be concise and relevant. Output is more deterministic and adheres to conventions.|
 |Data Analysis Scripting |	0.2 |	0.1 |	Generates data analysis scripts that are more likely to be correct and efficient. Output is more deterministic and focused.|
 |Exploratory Code Writing |	0.6 |	0.7 |	Generates code that explores alternative solutions and creative approaches. Output is less constrained by established patterns.|
-
-
-### Knowing the Models
-* `davinci`: `davinci-...` models are very useful to use a chat agent. If you train the model using some seed data (some instructions in plain text), it plays the role as instructed.
-
-
-### Important Links
-* Text generation Models Api documentation: https://platform.openai.com/docs/guides/text-generation
-* OpenAI API Parameters descriptions: https://platform.openai.com/docs/api-reference/chat/object#chat-create-seed
-* API Documentation link on Fine-tuning: https://platform.openai.com/docs/guides/fine-tuning
-
-### 
-
-|Model|	Training|	Input usage|	Output usage|
-|--|--|--|--|
-gpt-3.5-turbo	| $0.0080 / 1K tokens|	$0.0030 / 1K tokens|	$0.0060 / 1K tokens|
-davinci-002	| $0.0060 / 1K tokens|	$0.0120 / 1K tokens|	$0.0120 / 1K tokens|
-babbage-002|	$0.0004 / 1K tokens|	$0.0016 / 1K tokens|	$0.0016 / 1K tokens|

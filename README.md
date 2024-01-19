@@ -18,3 +18,4 @@ To give you an idea of how `temperature` and `Top_p` parameters can be used in d
 ### Important Links
 * Text generation Models Api documentation: https://platform.openai.com/docs/guides/text-generation
 * OpenAI API Parameters descriptions: https://platform.openai.com/docs/api-reference/chat/object#chat-create-seed
+* API Documentation link on Fine-tuning: https://platform.openai.com/docs/guides/fine-tuning

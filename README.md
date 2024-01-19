@@ -13,9 +13,17 @@ To give you an idea of how `temperature` and `Top_p` parameters can be used in d
 
 ### Knowing the Models
 * `davinci`: `davinci-...` models are very useful to use a chat agent. If you train the model using some seed data (some instructions in plain text), it plays the role as instructed.
-* 
+
 
 ### Important Links
 * Text generation Models Api documentation: https://platform.openai.com/docs/guides/text-generation
 * OpenAI API Parameters descriptions: https://platform.openai.com/docs/api-reference/chat/object#chat-create-seed
 * API Documentation link on Fine-tuning: https://platform.openai.com/docs/guides/fine-tuning
+
+### 
+
+|Model|	Training|	Input usage|	Output usage|
+|--|--|--|--|
+gpt-3.5-turbo	| $0.0080 / 1K tokens|	$0.0030 / 1K tokens|	$0.0060 / 1K tokens|
+davinci-002	| $0.0060 / 1K tokens|	$0.0120 / 1K tokens|	$0.0120 / 1K tokens|
+babbage-002|	$0.0004 / 1K tokens|	$0.0016 / 1K tokens|	$0.0016 / 1K tokens|

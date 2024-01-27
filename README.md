@@ -1,7 +1,7 @@
 # getting-started-with-openai
 
 ### Knowing the Models
-* `davinci`: `davinci-...` models are very useful to use a chat agent. If you train the model using some seed data (some instructions in plain text), it plays the role as instructed.
+* `davinci`: `davinci-...` *fine-tuning* models are very useful to use as chat agent. When trained or fine-tuned with some plain instruction or data, it plays the role as instructed.
 
 ### Important Links
 * Text generation Models Api documentation: https://platform.openai.com/docs/guides/text-generation

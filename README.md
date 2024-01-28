@@ -20,3 +20,7 @@
 |Code Comment Generation |	0.3 |	0.2 |	Generates code comments that are more likely to be concise and relevant. Output is more deterministic and adheres to conventions.|
 |Data Analysis Scripting |	0.2 |	0.1 |	Generates data analysis scripts that are more likely to be correct and efficient. Output is more deterministic and focused.|
 |Exploratory Code Writing |	0.6 |	0.7 |	Generates code that explores alternative solutions and creative approaches. Output is less constrained by established patterns.|
+
+* How to request for JSON response
+  1. On initial system message, instruct to produce JSON. E.g. "Please wrap you asnwer in well formatted JSON.".
+  2. Also use `response_format` parameter. `response_format: { type: 'json_object' }`.

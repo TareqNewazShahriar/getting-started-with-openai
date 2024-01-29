@@ -8,6 +8,38 @@
 * OpenAI API Parameters descriptions: https://platform.openai.com/docs/api-reference/chat/create
 * API Documentation link on Fine-tuning: https://platform.openai.com/docs/guides/fine-tuning
 
+### Sample JSON Responses
+
+#### Error Response
+```json
+{
+   "status": 404,
+   "headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "84d1d7bdbff7ba55-DAC",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Mon, 29 Jan 2024 13:32:42 GMT",
+      "server": "cloudflare",
+      "set-cookie": "__cf_bm=165iwJXos_4zsd13.onHMM4YsY2ciKfbeIb2osaYg.E-1706535162-1-AcSaoZl/c3NFm87462BvSkmMoOLrWn4X4d7sXxQj3I60R0SPoyJFmZt0Bi9ifPKwAwoh78dXZtMW38Mn1m4/5V0=; path=/; expires=Mon, 29-Jan-24 14:02:42 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=b29uQ72xHiZU0YkZkTFJSIj8SnofO6vd1JoXa9zNapA-1706535162783-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None",
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "transfer-encoding": "chunked",
+      "vary": "Origin",
+      "x-request-id": "443ccd7e9fefe4c995f42ea6ff3b5bf1"
+   },
+   "error": {
+      "message": "The model `text-davinci-003` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+      "type": "invalid_request_error",
+      "param": null,
+      "code": "model_not_found"
+   },
+   "code": "model_not_found",
+   "param": null,
+   "type": "invalid_request_error"
+}
+```
 
 ### Notes
 * To give you an idea of how `temperature` and `Top_p` parameters can be used in different scenarios, here’s a table with example values:
@@ -24,3 +56,4 @@
 * How to request for JSON response
   1. On initial system message, instruct to produce JSON. E.g. "Please wrap you asnwer in well formatted JSON.".
   2. Also use `response_format` parameter. `response_format: { type: 'json_object' }`.
+

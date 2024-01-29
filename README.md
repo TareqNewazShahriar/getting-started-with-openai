@@ -34,7 +34,8 @@ openai.chat.completions.create({
 .catch(console.log)
 ```
 
-Completion models (instruct, davinci)
+
+API to request to completion models (`gpt-3.5-turbo-instruct`, `davinci-002`):
 ```js
 function ask() {
    const article = 'First, questions should be formulated; then answers should be searched; based on the answers, conclusion(s) should be made. Our life consists of thousands of big and small but important conclusions. But how many of them are the result of question-answer-conclusion process?'

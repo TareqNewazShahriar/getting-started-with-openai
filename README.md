@@ -34,6 +34,23 @@ openai.chat.completions.create({
 .catch(console.log)
 ```
 
+Completion models (instruct, davinci)
+```js
+function ask() {
+   const article = 'First, questions should be formulated; then answers should be searched; based on the answers, conclusion(s) should be made. Our life consists of thousands of big and small but important conclusions. But how many of them are the result of question-answer-conclusion process?'
+   
+   const openai = new OpenAI({ apiKey: process.env.OPENAI__API_KEY })
+   openai.completions.create({
+      model: 'davinci-002', // davinci-002 / gpt-3.5-turbo-instruct / text-davinci-003 (deprecated)
+      prompt: `Please suggest a simple title, types and categories for the following article. Respond in json. Here's the article:\n\n${article}`,
+      temperature: 1.0,
+      max_tokens: 100
+   })
+      .then(console.log)
+      .catch(console.log)
+}
+```
+
 Here are the different answers from the different models with different temperature level.
 
 #### Model: gpt-3.5-turbo-1106

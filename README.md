@@ -7,6 +7,7 @@
 * Text generation Models Api documentation: https://platform.openai.com/docs/guides/text-generation
 * OpenAI API Parameters descriptions: https://platform.openai.com/docs/api-reference/chat/create
 * API Documentation link on Fine-tuning: https://platform.openai.com/docs/guides/fine-tuning
+* Deprecated models: https://platform.openai.com/docs/deprecations
 
 ### Sample JSON Responses
 

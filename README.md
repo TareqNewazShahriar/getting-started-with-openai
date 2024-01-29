@@ -36,13 +36,10 @@ openai.chat.completions.create({
 
 Here are the different answers from the different models with different temperature level.
 
-Model “gpt-3.5-turbo-1106”
-—------
-Temperature: 0.2
-Response: 
-```
-"{\n  \"title\": \"The Importance of Question-Answer-Conclusion Process in Decision Making\",\n  \"types\": [\"opinion\", \"reflection\"],\n  \"categories\": [\"decision making\", \"critical thinking\"],\n  \"keywords\": [\"question\", \"answer\", \"conclusion\", \"decision making\", \"critical thinking\", \"process\"]\n}"
-```
+#### Model: gpt-3.5-turbo-1106
+**Temperature**: 0.2  
+**Response**  
+`"{\n  \"title\": \"The Importance of Question-Answer-Conclusion Process in Decision Making\",\n  \"types\": [\"opinion\", \"reflection\"],\n  \"categories\": [\"decision making\", \"critical thinking\"],\n  \"keywords\": [\"question\", \"answer\", \"conclusion\", \"decision making\", \"critical thinking\", \"process\"]\n}"`
 
 Temperature: 0.7
 Response: 

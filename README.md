@@ -17,17 +17,17 @@
    "headers": {
       "alt-svc": "h3=\":443\"; ma=86400",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "84d1d7bdbff7ba55-DAC",
+      "cf-ray": "...",
       "connection": "keep-alive",
       "content-encoding": "gzip",
       "content-type": "application/json; charset=utf-8",
       "date": "Mon, 29 Jan 2024 13:32:42 GMT",
       "server": "cloudflare",
-      "set-cookie": "__cf_bm=165iwJXos_4zsd13.onHMM4YsY2ciKfbeIb2osaYg.E-1706535162-1-AcSaoZl/c3NFm87462BvSkmMoOLrWn4X4d7sXxQj3I60R0SPoyJFmZt0Bi9ifPKwAwoh78dXZtMW38Mn1m4/5V0=; path=/; expires=Mon, 29-Jan-24 14:02:42 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=b29uQ72xHiZU0YkZkTFJSIj8SnofO6vd1JoXa9zNapA-1706535162783-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None",
+      "set-cookie": "...",
       "strict-transport-security": "max-age=15724800; includeSubDomains",
       "transfer-encoding": "chunked",
       "vary": "Origin",
-      "x-request-id": "443ccd7e9fefe4c995f42ea6ff3b5bf1"
+      "x-request-id": "..."
    },
    "error": {
       "message": "The model `text-davinci-003` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",

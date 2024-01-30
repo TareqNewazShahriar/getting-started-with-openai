@@ -1,7 +1,7 @@
 # getting-started-with-openai
 
 ### Knowing the Models
-* `davinci`: `davinci-...` *fine-tuning* models are very useful to use as chat agent. When trained or fine-tuned with some plain instruction or data, it plays the role as instructed.
+* `text-davinci-003`: *fine-tuning* models are useful to use as chat agent. When trained with some instruction or seed data, it plays the role as instructed.
 
 ### Important Links
 * Text generation Models Api documentation: https://platform.openai.com/docs/guides/text-generation

@@ -66,34 +66,22 @@ Response:
 `"The Art of Formulating Questions, Seeking Answers, and Drawing Conclusions"`
 
 Temperature: 2.0
-Response: 
-```
-"{\n  \"title\": \"The Power of Questioning and Applying Conclusions in Daily Life\",\n  \"types\": [\"philosophical\", \"relatable\"],\n  \"categories\": [\"personal growth\", \"self-reflection\", \"mindfulness\"],\n  \"keywords\": [\"questioning\", \"answers\", \"conclusions\", \"daily life\", \"self-improvement\"]\n}"
-```
+Response: `"The Power of Questioning and Applying Conclusions in Daily Life"`
 
 Model: gpt-3.5-turbo-instruct
 Temperature: 0.7
-Response: 
-```
-"\n\n{\n  \"title\": \"The Importance of Formulating Questions before Reaching Conclusions\",\n  \"types\": [\"Opinion\", \"Advice\"],\n  \"categories\": [\"Personal Development\", \"Critical Thinking\", \"Decision Making\"]\n}"
-```
+Response: `"The Importance of Formulating Questions before Reaching Conclusions"`
 
-Here’s the funny one. I read about efficient results of “text-davinci-003” as fine-tune model. So I had an admiration for “davinci” model. Since text-davinci-003 is deprecated so I used the available base model davinci-002. Take a look its responses.
+Here’s the funny one. Since `text-davinci-003` is deprecated, so the available base model `davinci-002` was used.
 
 Model: davinci-002
 Temperature: 02
-Response:
-```
-" We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the"
-```
+Response: `" We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the"`
 
 Temperature: 1.0
-```json
-" Very few!\n\nCategories:\n\nhttps://www.geeksforgeeks.org/what-is-your-strength/\n\nTitle: What strengths do you bring to this job?\n\nQuestion: Tell me about a time when you were a member of an effective team at work. What role did you play?\n\nQuestion: Describe your leadership style. When have you been the most effective as a leader? When have you been the least effective?\n\nQuestion: Please describe a recent difficult team project and how you addressed it.\n\nQuestion: Answer"
-```
+Response: `" Very few!"`
 
-
-### Sample JSON Responses
+### Sample JSON Response
 
 **Success response**
 ```json
@@ -107,7 +95,7 @@ Temperature: 1.0
          "index": 0,
          "message": {
             "role": "assistant",
-            "content": "{\n  \"title\": \"The Art of Formulating Questions and Seeking Answers\",\n  \"types\": [\"opinion\", \"self-improvement\"],\n  \"categories\": [\"productivity\", \"personal development\"],\n  \"keywords\": [\"questions\", \"answers\", \"conclusions\", \"formulation\", \"decision-making\"]\n}"
+            "content": "{\n  \"title\": \"The Art of Formulating Questions and Seeking Answers\"\n}"
          },
          "logprobs": null,
          "finish_reason": "stop"

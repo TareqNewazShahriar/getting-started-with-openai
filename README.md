@@ -7,12 +7,14 @@
 * Deprecated models: https://platform.openai.com/docs/deprecations
 
 ### Model Comparison
-Models tested:
+Couple of models are tested to generate article title.
+
+**Models tested**  
 * gpt-3.5-turbo-1106 (chat model)
 * gpt-3.5-turbo-instruct (completion model. Kinda like "ask a question, no chat")
 * davinci-002 (completion model; also base model)
 
-Temperature: decimal, 0.0 to 2.0. Low value means more consistent answer. Higher value means more diverse and creative answer.
+**Temperature**: decimal, 0.0 to 2.0. Low value means more consistent answer. Higher value means more diverse and creative answer.
 
 ```js
 const OpenAI = require('openai')
@@ -22,7 +24,7 @@ openai.chat.completions.create({
   model: 'gpt-3.5-turbo-1106',
   messages: [
    { role: 'system', content: 'Please answer in JSON format.'},
-   { role: 'user', content: `Please suggest a simple title for the following article. Also please suggest types, categories of this article and extract keywords. Here's the article:\n\n${article}` }
+   { role: 'user', content: `Please suggest a simple title for the following article. Here's the article:\n\n${article}` }
   ],
   response_format: { type: 'json_object' },
   temperature: 0.7
@@ -39,8 +41,8 @@ function ask() {
    
    const openai = new OpenAI({ apiKey: process.env.OPENAI__API_KEY })
    openai.completions.create({
-      model: 'davinci-002', // davinci-002 / gpt-3.5-turbo-instruct / text-davinci-003 (deprecated)
-      prompt: `Please suggest a simple title, types and categories for the following article. Respond in json. Here's the article:\n\n${article}`,
+      model: 'gpt-3.5-turbo-instruct', // davinci-002 / gpt-3.5-turbo-instruct / text-davinci-003 (deprecated)
+      prompt: `Please suggest a simple title for the following article:\n\n${article}`,
       temperature: 1.0,
       max_tokens: 100
    })
@@ -53,20 +55,15 @@ Here are the different answers from the different models with different temperat
 
 #### Model: gpt-3.5-turbo-1106
 **Temperature**: 0.2  
-**Response**  
-`"{\n  \"title\": \"The Importance of Question-Answer-Conclusion Process in Decision Making\",\n  \"types\": [\"opinion\", \"reflection\"],\n  \"categories\": [\"decision making\", \"critical thinking\"],\n  \"keywords\": [\"question\", \"answer\", \"conclusion\", \"decision making\", \"critical thinking\", \"process\"]\n}"`
+**Response**: `"The Importance of Question-Answer-Conclusion Process in Decision Making"`
 
 Temperature: 0.7
-Response: 
-```
-"{\n  \"title\": \"The Importance of Question-Answer-Conclusion Process in Decision Making\",\n  \"types\": [\"Opinion\", \"Reflection\"],\n  \"categories\": [\"Decision Making\", \"Critical Thinking\"],\n  \"keywords\": [\"question\", \"answer\", \"conclusion\", \"decision making\", \"critical thinking\", \"process\"]\n}"
-```
+Response: `"The Importance of Question-Answer-Conclusion Process in Decision Making"`
+
 
 Temperature: 1.5
 Response: 
-```
-"{\n  \"suggested_title\": \"The Art of Formulating Questions, Seeking Answers, and Drawing Conclusions\",\n  \"types\": [\"Opinion\", \"Philosophical\", \"Self-Reflection\"],\n  \"categories\": [\"Philosophy\", \"Personal Development\", \"Decision-Making\"],\n  \"extracted_keywords\": [\"questioning\", \"searching for answers\", \"concluding\", \"life decisions\"]\n}"
-```
+`"The Art of Formulating Questions, Seeking Answers, and Drawing Conclusions"`
 
 Temperature: 2.0
 Response: 

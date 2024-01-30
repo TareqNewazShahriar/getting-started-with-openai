@@ -57,29 +57,27 @@ Here are the different answers from the different models with different temperat
 **Temperature**: 0.2  
 **Response**: `"The Importance of Question-Answer-Conclusion Process in Decision Making"`
 
-Temperature: 0.7
+Temperature: 0.7  
 Response: `"The Importance of Question-Answer-Conclusion Process in Decision Making"`
 
+**Temperature**: 1.5  
+**Response**: `"The Art of Formulating Questions, Seeking Answers, and Drawing Conclusions"`
 
-Temperature: 1.5
-Response: 
-`"The Art of Formulating Questions, Seeking Answers, and Drawing Conclusions"`
+**Temperature**: 2.0  
+**Response**: `"The Power of Questioning and Applying Conclusions in Daily Life"`
 
-Temperature: 2.0
-Response: `"The Power of Questioning and Applying Conclusions in Daily Life"`
-
-Model: gpt-3.5-turbo-instruct
-Temperature: 0.7
-Response: `"The Importance of Formulating Questions before Reaching Conclusions"`
+**Model: gpt-3.5-turbo-instruct**
+**Temperature**: 0.7 
+**Response**: `"The Importance of Formulating Questions before Reaching Conclusions"`
 
 Here’s the funny one. Since `text-davinci-003` is deprecated, so the available base model `davinci-002` was used.
 
-Model: davinci-002
-Temperature: 02
-Response: `" We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the"`
+**Model: davinci-002**
+**Temperature**: 02  
+**Response**: `" We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the journey. We are so much in a hurry to reach the destination that we forget the"`
 
-Temperature: 1.0
-Response: `" Very few!"`
+**Temperature**: 1.0  
+**Response**: `" Very few!"`
 
 ### Sample JSON Response
 

@@ -1,8 +1,5 @@
 # getting-started-with-openai
 
-### Knowing the Models
-* `text-davinci-003`: *fine-tuning* models are useful to use as chat agent. When trained with some instruction or seed data, it plays the role as instructed.
-
 ### Important Links
 * Text generation Models Api documentation: https://platform.openai.com/docs/guides/text-generation
 * OpenAI API Parameters descriptions: https://platform.openai.com/docs/api-reference/chat/create
